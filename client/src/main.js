@@ -1,8 +1,20 @@
 import Vue from 'vue'
 import App from './App.vue'
+import axios from 'axios'
+import initUser from './util/user'
+import store from './store'
+import router from './router'
+
+import './util/socket'
 
 Vue.config.productionTip = false
 
-new Vue({
-  ...App,
-}).$mount('#app')
+axios.get('/api/user').then((response) => {
+  initUser(response.data)
+
+  new Vue({
+    ...App,
+    store,
+    router,
+  }).$mount('#app')
+})
