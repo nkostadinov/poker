@@ -2,7 +2,6 @@ import Vue from 'vue'
 import store from '../store'
 
 export default (user) => {
-  console.log(user)
   store.commit('setUser', user)
 
   Vue.user = Vue.prototype.$user = {
@@ -17,6 +16,9 @@ export default (user) => {
     },
     get isAdmin () {
       return store.state.user.role === 'Administrator'
+    },
+    get picture () {
+      return store.state.user.picture.data.url
     }
   }
 

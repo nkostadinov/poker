@@ -12,6 +12,9 @@ const router = new VueRouter({
     }, {
       path: '/lobby',
       component: () => import('./pages/Lobby')
+    }, {
+      path: '/table',
+      component: () => import('./pages/GameTable')
     }
   ],
   mode: 'history'

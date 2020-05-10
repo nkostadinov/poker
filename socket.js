@@ -1,11 +1,14 @@
-module.exports = function (io) {
-  io
-    .on('connection', (socket) => {
-      console.log(socket.id);
+const gameData = require('./routes/gameData')
+var sharedsession = require("express-socket.io-session")
+const session = require('./routes/session')
 
-      socket.emit('news', {hello: 'world'});
-      socket.on('my other event', (data) => {
-        console.log(data);
-      });
+module.exports = function (io) {
+  gameData.io = io
+
+  io
+    .use(sharedsession(session, { autoSave: true }))
+    .on('connection', (socket) => {
+      // console.log(socket.handshake.session.user)
+      socket.emit('games', gameData.getGamedata());
     });
 }

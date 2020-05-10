@@ -5,8 +5,6 @@ import initUser from './util/user'
 import store from './store'
 import router from './router'
 
-import './util/socket'
-
 Vue.config.productionTip = false
 
 axios.get('/api/user').then((response) => {

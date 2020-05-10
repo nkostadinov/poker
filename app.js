@@ -18,7 +18,7 @@ require('./configure')(app)
 
 const { resolve } = require('path')
 app.use(history({
-  verbose: true
+  verbose: false
 }))
 
 const publicPath = resolve(__dirname, './client/dist')

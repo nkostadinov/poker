@@ -11,22 +11,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a0aadc4-ceb2-4e46-9401-4bd27630e6bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Lobby.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/util/socket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/util/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/scss/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/lobby-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/TopBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/GameTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/PokerPlayer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poker/engine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poker/node-poker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/gameData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/session.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Lobby.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Lobby.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/util/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/util/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/util/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/util/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configure.js" beforeDir="false" afterPath="$PROJECT_DIR$/configure.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -49,6 +55,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue modal" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
       </list>
@@ -57,6 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1bY15tl5nRKJW2DT2QDh14Yiyed" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -79,8 +87,12 @@
     <property name="ts.external.directory.path" value="C:\Users\Nikola Kostadinov\AppData\Local\JetBrains\Toolbox\apps\PhpStorm\ch-0\201.6668.153\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\webroot\poker\client\public\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\webroot\poker\client\src\assets" />
+      <recent name="C:\webroot\poker\poker" />
       <recent name="C:\webroot\poker" />
     </key>
   </component>
@@ -105,8 +117,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="npm.dev" />
+      <item itemvalue="npm.start" />
       <item itemvalue="npm.serve" />
     </list>
   </component>
@@ -123,7 +146,8 @@
       <workItem from="1588794033724" duration="8789000" />
       <workItem from="1588832541298" duration="5516000" />
       <workItem from="1588856332275" duration="3000" />
-      <workItem from="1588879618839" duration="10483000" />
+      <workItem from="1588879618839" duration="15398000" />
+      <workItem from="1588913898138" duration="32463000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1588833085411</created>
@@ -132,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588833085411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add auth via fb">
+      <created>1588890267779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588890267780</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,13 +188,14 @@
       <path value="$PROJECT_DIR$/client" />
     </ignored-roots>
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add auth via fb" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth via fb" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588881161933">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588920711649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588881161933" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588920711649" />
     <state x="165" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588796154402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,37 +204,85 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588830823881" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588833084857">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588890266041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588833084857" />
-    <state width="1493" height="276" key="GridCell.Tab.0.bottom" timestamp="1588889569993">
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588890266041" />
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1589104506576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588889569993" />
-    <state width="1493" height="276" key="GridCell.Tab.0.center" timestamp="1588889569993">
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589104506576" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1589104506575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588889569993" />
-    <state width="1493" height="276" key="GridCell.Tab.0.left" timestamp="1588889569992">
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589104506575" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1589104506575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588889569992" />
-    <state width="1493" height="276" key="GridCell.Tab.0.right" timestamp="1588889569993">
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589104506575" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1589104506575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="276" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588889569993" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589104506575" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588923616908">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588923616908" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1588923616908">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588923616908" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1588923616908">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588923616908" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1588923616908">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588923616908" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1588923616909">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588923616909" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1588923616909">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1588923616909" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1588923616909">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1588923616909" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1588923616909">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1588923616909" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1588832994322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588832994322" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1589104785278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1589104785278" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1588890272703">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588890272703" />
     <state x="650" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1588832596836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="650" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1588832596836" />
-    <state x="478" y="147" width="579" height="582" key="find.popup" timestamp="1588880425587">
+    <state x="478" y="147" width="579" height="582" key="find.popup" timestamp="1588940890155">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="147" width="579" height="582" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1588880425587" />
+    <state x="478" y="147" width="579" height="582" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1588940890155" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1589102549718">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1589102549718" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588937988454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588937988454" />
   </component>
 </project>
